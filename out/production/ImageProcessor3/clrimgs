@@ -1,0 +1,13 @@
+#!/bin/zsh
+#
+# Z-Shell script that clears all of the generated images from the image-output directory
+#
+# By: Will Brandon
+#
+# Note: All paths are relative, be sure to cd into the project directory before starting this
+# script.
+
+rm image-output/*.ppm
+rm image-output/*.png
+rm image-output/*.jpg
+rm image-output/*.bmp

@@ -1,0 +1,5 @@
+######## image-output ########
+
+This is an output folder for images produced by the Image Processor application. Obviously,
+images can be saved to any directory on your machine. This is just a convenient location
+used by res/sample-script.txt.

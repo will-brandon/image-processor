@@ -1,0 +1,15 @@
+#!/bin/zsh
+#
+# Z-Shell packaging script for the Image Processor
+# Packages the Image Processor application for submission
+#
+# By: Will Brandon
+#
+# Note: All paths are relative, be sure to cd into the project directory before starting this
+# script.
+
+./clrimgs
+
+zip -r ImageProcessorSubmission.zip README.md USEME.md src test image-output res testresources start clrimgs -x "*.DS_Store"
+
+echo "\033[0m\n >> \033[1;33mPackaging the Image Processor application for submission\033[0m\n"

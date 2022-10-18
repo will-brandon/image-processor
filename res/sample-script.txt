@@ -1,0 +1,199 @@
+# LOAD IMAGES
+
+# Load in Original Images
+load res/original.ppm oPPM
+load res/original.png oPNG
+load res/original.jpg oJPG
+load res/original.bmp oBMP
+
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+
+
+# PERFORM FILTERS
+
+# RGB Filter
+red oPPM ppmRed
+red oPNG pngRed
+red oJPG jpgRed
+red oBMP bmpRed
+
+green oPPM ppmGreen
+green oPNG pngGreen
+green oJPG jpgGreen
+green oBMP bmpGreen
+
+blue oPPM ppmBlue
+blue oPNG pngBlue
+blue oJPG jpgBlue
+blue oBMP bmpBlue
+
+# Intensity Filter
+intensity oPPM ppmIntensity
+intensity oPNG pngIntensity
+intensity oJPG jpgIntensity
+intensity oBMP bmpIntensity
+
+# Luma Filter
+luma oPPM ppmLuma
+luma oPNG pngLuma
+luma oJPG jpgLuma
+luma oBMP bmpLuma
+
+# Value Filter
+max-value oPPM ppmValue
+max-value oPNG pngValue
+max-value oJPG jpgValue
+max-value oBMP bmpValue
+
+# Brighten Filter
+brighten 50 oPPM ppmBrighten
+brighten 50 oPNG pngBrighten
+brighten 50 oJPG jpgBrighten
+brighten 50 oBMP bmpBrighten
+
+# Darken Filter (aka brighten filter with negative values)
+brighten -50 oPPM ppmDarken
+brighten -50 oPNG pngDarken
+brighten -50 oJPG jpgDarken
+brighten -50 oBMP bmpDarken
+
+# Horizontal Flip Filter
+horizontal-flip oPPM ppmHorizontal
+horizontal-flip oPNG pngHorizontal
+horizontal-flip oJPG jpgHorizontal
+horizontal-flip oBMP bmpHorizontal
+
+# Vertical Flip Filter
+vertical-flip oPPM ppmVertical
+vertical-flip oPNG pngVertical
+vertical-flip oJPG jpgVertical
+vertical-flip oBMP bmpVertical
+
+# Sepia Filter
+sepia oPPM ppmSepia
+sepia oPNG pngSepia
+sepia oJPG jpgSepia
+sepia oBMP bmpSepia
+
+# Greyscale Filter
+greyscale oPPM ppmGreyscale
+greyscale oPNG pngGreyscale
+greyscale oJPG jpgGreyscale
+greyscale oBMP bmpGreyscale
+
+# Sharpen Filter
+sharpen oPPM ppmSharpen
+sharpen oPNG pngSharpen
+sharpen oJPG jpgSharpen
+sharpen oBMP bmpSharpen
+
+# Blur Filter
+blur oPPM ppmBlur
+blur oPNG pngBlur
+blur oJPG jpgBlur
+blur oBMP bmpBlur
+
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+
+
+# SAVE / EXPORT FILTERED IMAGES (find the saved images in the filteredImages folder)
+
+# export original images as is
+save image-output/original.ppm oPPM
+save image-output/original.png oPNG
+save image-output/original.jpg oJPG
+save image-output/original.bmp oBMP
+
+# RGB Filter
+save image-output/red.ppm ppmRed
+save image-output/red.png pngRed
+save image-output/red.jpg jpgRed
+save image-output/red.bmp bmpRed
+
+save image-output/green.ppm ppmGreen
+save image-output/green.png pngGreen
+save image-output/green.jpg jpgGreen
+save image-output/green.bmp bmpGreen
+
+save image-output/blue.ppm ppmBlue
+save image-output/blue.png pngBlue
+save image-output/blue.jpg jpgBlue
+save image-output/blue.bmp bmpBlue
+
+# Intensity Filter
+save image-output/intensity.ppm ppmIntensity
+save image-output/intensity.png pngIntensity
+save image-output/intensity.jpg jpgIntensity
+save image-output/intensity.bmp bmpIntensity
+
+# Luma Filter
+save image-output/luma.ppm ppmLuma
+save image-output/luma.png pngLuma
+save image-output/luma.jpg jpgLuma
+save image-output/luma.bmp bmpLuma
+
+# Value Filter
+save image-output/value.ppm ppmValue
+save image-output/value.png pngValue
+save image-output/value.jpg jpgValue
+save image-output/value.bmp bmpValue
+
+# Brighten Filter
+save image-output/bright50.ppm ppmBrighten
+save image-output/bright50.png pngBrighten
+save image-output/bright50.jpg jpgBrighten
+save image-output/bright50.bmp bmpBrighten
+
+# Darken Filter (aka brighten filter with negative values)
+save image-output/dark50.ppm ppmDarken
+save image-output/dark50.png pngDarken
+save image-output/dark50.jpg jpgDarken
+save image-output/dark50.bmp bmpDarken
+
+# Horizontal Flip Filter
+save image-output/horizontal.ppm ppmHorizontal
+save image-output/horizontal.png pngHorizontal
+save image-output/horizontal.jpg jpgHorizontal
+save image-output/horizontal.bmp bmpHorizontal
+
+# Vertical Flip Filter
+save image-output/vertical.ppm ppmVertical
+save image-output/vertical.png pngVertical
+save image-output/vertical.jpg jpgVertical
+save image-output/vertical.bmp bmpVertical
+
+# Sepia Filter
+save image-output/sepia.ppm ppmSepia
+save image-output/sepia.png pngSepia
+save image-output/sepia.jpg jpgSepia
+save image-output/sepia.bmp bmpSepia
+
+# Greyscale Filter
+save image-output/greyscale.ppm ppmGreyscale
+save image-output/greyscale.png pngGreyscale
+save image-output/greyscale.jpg jpgGreyscale
+save image-output/greyscale.bmp bmpGreyscale
+
+# Sharpen Filter
+save image-output/sharpen.ppm ppmSharpen
+save image-output/sharpen.png pngSharpen
+save image-output/sharpen.jpg jpgSharpen
+save image-output/sharpen.bmp bmpSharpen
+
+# Blur Filter
+save image-output/blur.ppm ppmBlur
+save image-output/blur.png pngBlur
+save image-output/blur.jpg jpgBlur
+save image-output/blur.bmp bmpBlur
+
+# Save files with different formats (files can be imported in one format and exported as another)
+save image-output/ppmToPng.png oPPM
+save image-output/pngToJpg.jpg oJPG
+save image-output/jgpToMbp.bmp oJPG
+save image-output/bmpToPpm.ppm oBMP
+
+save image-output/pngToPpmRed.ppm pngRed
+save image-output/bmpToJpgBlue.jpg bmpBlue
+save image-output/ppmToBmpGreen.bmp ppmGreen
+
+# Refer to the image-output directory to see all exported images!

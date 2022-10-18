@@ -1,0 +1,14 @@
+#!/bin/zsh
+#
+# Z-Shell build and run script for the Image Processor
+# Builds the application and starts it.
+#
+# By: Will Brandon
+#
+# Note: All paths are relative, be sure to cd into the project directory before starting this
+# script.
+
+echo "\033[1;32m - - - - COMPILING AND RUNNING THE IMAGE PROCESSOR - - - -\033[0m"
+
+make
+./startclasses

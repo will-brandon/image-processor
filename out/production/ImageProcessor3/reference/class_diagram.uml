@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/willbrandon/Library/Mobile Documents/com~apple~CloudDocs/Northeastern/Year 1/Summer 1/Object Oriented Design/group/ImageProcessor</OriginalElement>
+  <nodes>
+    <node x="897.6632414784065" y="-1034.276414877067">cs3500.imageprocessor.view.IPTextView</node>
+    <node x="250.09884240171738" y="-387.3534396266715">cs3500.imageprocessor.model.filter.hw04.MaxValueFilter</node>
+    <node x="898.6632414784065" y="-528.5168138925552">cs3500.imageprocessor.model.filter.hw04.HorizontalFlipFilter</node>
+    <node x="1167.0332992157985" y="-1034.276414877067">cs3500.imageprocessor.controller.IPCommandLineController</node>
+    <node x="1862.9084003485636" y="-786.7482310908038">cs3500.imageprocessor.util.image.RGBImage</node>
+    <node x="1282.5332992157985" y="-1281.8045986633304">cs3500.imageprocessor.controller.IPController</node>
+    <node x="1415.6215244132918" y="-875.0285929976226">cs3500.imageprocessor.controller.command.bank.IPCommandRegistry</node>
+    <node x="1839.9084003485636" y="-1034.276414877067">cs3500.imageprocessor.util.image.ChanneledImage</node>
+    <node x="897.6632414784063" y="-1281.8045986633304">cs3500.imageprocessor.view.IPView</node>
+    <node x="1585.2649623809277" y="-398.72629938214163">cs3500.imageprocessor.controller.command.IPFilterCommand</node>
+    <node x="678.0884828349119" y="-528.5168138925552">cs3500.imageprocessor.model.filter.hw04.VerticalFlipFilter</node>
+    <node x="-19.442027740247056" y="-387.3534396266715">cs3500.imageprocessor.model.filter.hw04.IntensityFilter</node>
+    <node x="81.12335804449077" y="-687.9248048742364">cs3500.imageprocessor.model.filter.hw04.ChannelModFilter</node>
+    <node x="-141.02027108028938" y="-687.9248048742364">cs3500.imageprocessor.model.filter.hw04.RGBFilter</node>
+    <node x="1839.9084003485636" y="-1281.8045986633304">cs3500.imageprocessor.util.image.Image</node>
+    <node x="110.12335804449077" y="-916.5563338475268">cs3500.imageprocessor.model.filter.hw04.ImageFilter</node>
+    <node x="-288.98289788221143" y="-387.3534396266715">cs3500.imageprocessor.model.filter.hw04.BrightnessFilter</node>
+    <node x="744.5077773454589" y="-687.9248048742364">cs3500.imageprocessor.model.filter.hw04.PixelPosnFilter</node>
+    <node x="400.7931837410141" y="-1281.8045986633304">cs3500.imageprocessor.model.filter.hw04.IPModel</node>
+    <node x="519.6397125436818" y="-387.3534396266715">cs3500.imageprocessor.model.filter.hw04.LumaFilter</node>
+    <node x="400.7931837410141" y="-1034.276414877067">cs3500.imageprocessor.model.filter.hw04.IPStandardModel</node>
+    <node x="1415.6215244132918" y="-631.458610902939">cs3500.imageprocessor.controller.command.IPCommand</node>
+    <node x="1834.4084003485636" y="-398.72629938214163">cs3500.imageprocessor.controller.command.IPBrightnenCommand</node>
+    <node x="1336.1215244132918" y="-398.72629938214163">cs3500.imageprocessor.controller.command.IPSaveCommand</node>
+    <node x="1415.6215244132918" y="-735.046591806127">cs3500.imageprocessor.controller.command.bank.IPCommandBank</node>
+    <node x="1415.6215244132918" y="-505.14074114452563">cs3500.imageprocessor.controller.command.IPModelCommand</node>
+    <node x="1086.978086445656" y="-398.72629938214163">cs3500.imageprocessor.controller.command.IPLoadCommand</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.VerticalFlipFilter" target="cs3500.imageprocessor.model.filter.hw04.PixelPosnFilter" relationship="GENERALIZATION">
+      <point x="-2.2608099196877447" y="-29.64121316616081" />
+      <point x="770.3276729152242" y="-582.9371735184197" />
+      <point x="780.6616307478057" y="-582.9371735184197" />
+      <point x="-58.34614659765316" y="25.456305141188068" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.RGBFilter" target="cs3500.imageprocessor.model.filter.hw04.ImageFilter" relationship="REALIZATION">
+      <point x="94.49961031715016" y="2.5599346474791673E-4" />
+      <point x="-32.07188065266422" y="-661.4245488807717" />
+      <point x="-32.07188065266422" y="-775.7405693608816" />
+      <point x="141.92698045415915" y="-775.7405693608816" />
+      <point x="-62.69637759033162" y="30.980519645711865" />
+    </edge>
+    <edge source="cs3500.imageprocessor.controller.command.IPSaveCommand" target="cs3500.imageprocessor.controller.command.IPModelCommand" relationship="GENERALIZATION">
+      <point x="-1.9769204248825218" y="-26.50039650092924" />
+      <point x="1442.6446039884092" y="-429.9316516034298" />
+      <point x="1524.1215244132918" y="-429.9316516034298" />
+      <point x="1524.1215244132918" y="-452.3259697747619" />
+      <point x="-46.98044283565969" y="26.31477136976372" />
+    </edge>
+    <edge source="cs3500.imageprocessor.controller.command.IPFilterCommand" target="cs3500.imageprocessor.controller.command.IPModelCommand" relationship="GENERALIZATION">
+      <point x="4.316030376685376E-4" y="-26.500434407569628" />
+      <point x="1693.7653939839654" y="-413.88870335724994" />
+      <point x="1581.4977286678618" y="-413.88870335724994" />
+      <point x="57.376204254569984" y="28.114023905802185" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.PixelPosnFilter" target="cs3500.imageprocessor.model.filter.hw04.ImageFilter" relationship="REALIZATION">
+      <point x="3.5134665063196735E-4" y="-26.499570327998867" />
+      <point x="839.0081286921095" y="-766.1446876668447" />
+      <point x="284.06793080119604" y="-766.1446876668447" />
+      <point x="79.44457275670527" y="29.1812671096734" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.IPStandardModel" target="cs3500.imageprocessor.model.filter.hw04.IPModel" relationship="REALIZATION">
+      <point x="157.5" y="-6.837313524650881" />
+      <point x="522.3323484693727" y="-992.6137284017179" />
+      <point x="522.3323484693727" y="-1233.3045986633304" />
+      <point x="-157.5" y="0.0" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.LumaFilter" target="cs3500.imageprocessor.model.filter.hw04.ChannelModFilter" relationship="GENERALIZATION">
+      <point x="2.039146083916421E-4" y="26.499620597988496" />
+      <point x="643.1399164582901" y="-517.7431927389214" />
+      <point x="297.7188635294395" y="-517.7431927389214" />
+      <point x="297.7188635294395" y="-624.7544046983448" />
+      <point x="204.62375995229087" y="-624.7544046983448" />
+      <point x="4.019078000965237E-4" y="37.499945824583506" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.ChannelModFilter" target="cs3500.imageprocessor.model.filter.hw04.ImageFilter" relationship="REALIZATION">
+      <point x="4.019078000965237E-4" y="-37.500054175416494" />
+      <point x="204.62375995229087" y="-775.7405693608816" />
+      <point x="206.70007175154302" y="-775.7405693608816" />
+      <point x="2.0767137070522494" y="27.382014573634933" />
+    </edge>
+    <edge source="cs3500.imageprocessor.controller.command.IPBrightnenCommand" target="cs3500.imageprocessor.controller.command.IPModelCommand" relationship="GENERALIZATION">
+      <point x="1.0186019765121728" y="-25.307892496197383" />
+      <point x="1946.9270023250758" y="-429.9316516034298" />
+      <point x="1945.9084003485636" y="-429.9316516034298" />
+      <point x="1945.9084003485636" y="-462.44797831720695" />
+      <point x="108.50009250196877" y="16.19276282731869" />
+    </edge>
+    <edge source="cs3500.imageprocessor.controller.IPCommandLineController" target="cs3500.imageprocessor.controller.IPController" relationship="REALIZATION">
+      <point x="-188.0" y="-34.26141439491562" />
+      <point x="1355.0332992157985" y="-1020.0378292719827" />
+      <point x="1355.0332992157985" y="-1255.3045986633304" />
+      <point x="72.5" y="0.0" />
+    </edge>
+    <edge source="cs3500.imageprocessor.controller.command.bank.IPCommandBank" target="cs3500.imageprocessor.controller.command.bank.IPCommandBank" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="1524.1215244132918" y="-771.546591806127" />
+      <point x="1524.1215244132918" y="-771.546591806127" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.HorizontalFlipFilter" target="cs3500.imageprocessor.model.filter.hw04.PixelPosnFilter" relationship="GENERALIZATION">
+      <point x="-0.3960269349747705" y="-25.99653367818678" />
+      <point x="998.7672145434317" y="-581.7208093833958" />
+      <point x="879.62052022992" y="-581.7208093833958" />
+      <point x="40.61274288446111" y="27.255557677226534" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.IntensityFilter" target="cs3500.imageprocessor.model.filter.hw04.ChannelModFilter" relationship="GENERALIZATION">
+      <point x="1.8839574736374516" y="-28.61746266911041" />
+      <point x="105.9419297333904" y="-461.44100373731965" />
+      <point x="136.44451790844488" y="-461.44100373731965" />
+      <point x="136.44451790844488" y="-624.7544046983448" />
+      <point x="204.62375995229087" y="-624.7544046983448" />
+      <point x="4.019078000965237E-4" y="37.499945824583506" />
+    </edge>
+    <edge source="cs3500.imageprocessor.controller.command.IPLoadCommand" target="cs3500.imageprocessor.controller.command.IPModelCommand" relationship="GENERALIZATION">
+      <point x="2.080677762137384E-4" y="-26.500123816110772" />
+      <point x="1195.478294513432" y="-477.6281587763642" />
+      <point x="-109.95428159700509" y="1.012582368161418" />
+    </edge>
+    <edge source="cs3500.imageprocessor.util.image.RGBImage" target="cs3500.imageprocessor.util.image.ChanneledImage" relationship="GENERALIZATION">
+      <point x="-1.302954539699158" y="-30.799286261039015" />
+      <point x="-1.302954539699158" y="91.35356383595581" />
+    </edge>
+    <edge source="cs3500.imageprocessor.controller.command.bank.IPCommandRegistry" target="cs3500.imageprocessor.controller.command.bank.IPCommandBank" relationship="REALIZATION">
+      <point x="108.5" y="0.0" />
+      <point x="1524.1215244132918" y="-837.5285929976226" />
+      <point x="0.0" y="-26.5" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.MaxValueFilter" target="cs3500.imageprocessor.model.filter.hw04.ChannelModFilter" relationship="GENERALIZATION">
+      <point x="7.628725345554358" y="-25.018957597033477" />
+      <point x="381.22756774727173" y="-432.6671521490124" />
+      <point x="191.56296390317158" y="-432.6671521490124" />
+      <point x="191.56296390317158" y="-624.7544046983448" />
+      <point x="204.62375995229087" y="-624.7544046983448" />
+      <point x="4.019078000965237E-4" y="37.499945824583506" />
+    </edge>
+    <edge source="cs3500.imageprocessor.util.image.ChanneledImage" target="cs3500.imageprocessor.util.image.Image" relationship="REALIZATION">
+      <point x="106.0" y="-61.49785948519013" />
+      <point x="1945.9084003485636" y="-992.2742743622572" />
+      <point x="1945.9084003485636" y="-1178.3045986633304" />
+      <point x="-106.0" y="0.0" />
+    </edge>
+    <edge source="cs3500.imageprocessor.model.filter.hw04.BrightnessFilter" target="cs3500.imageprocessor.model.filter.hw04.ChannelModFilter" relationship="GENERALIZATION">
+      <point x="-5.042823509204027" y="-26.50001579244247" />
+      <point x="-170.52572139141546" y="-517.7431927389214" />
+      <point x="96.94566705319818" y="-517.7431927389214" />
+      <point x="-107.6776909912926" y="36.04733557364921" />
+    </edge>
+    <edge source="cs3500.imageprocessor.view.IPTextView" target="cs3500.imageprocessor.view.IPView" relationship="REALIZATION">
+      <point x="-101.5" y="0.0" />
+      <point x="999.1632414784065" y="-963.776414877067" />
+      <point x="999.1632414784065" y="-1109.5405067701986" />
+      <point x="999.1632414784063" y="-1109.5405067701986" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="cs3500.imageprocessor.controller.command.IPModelCommand" target="cs3500.imageprocessor.controller.command.IPCommand" relationship="REALIZATION">
+      <point x="1.5993756373782162" y="-20.57844806429995" />
+      <point x="1525.72090005067" y="-538.8027450016713" />
+      <point x="1523.9216475146316" y="-538.8027450016713" />
+      <point x="-0.19987689866024994" y="26.572310108422016" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.555786350148368" showDependencies="false" x="1408.594767752269" y="-450.6716497597438" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

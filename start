@@ -1,0 +1,11 @@
+#!/bin/zsh
+#
+# Z-Shell start script for the Image Processor using the jar in the "res" directory
+# Starts the Image Processor application
+#
+# By: Will Brandon
+#
+# Note: All paths are relative, be sure to cd into the project directory before starting this
+# script.
+
+java -jar res/ImageProcessor3.jar "$@"
